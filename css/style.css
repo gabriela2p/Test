@@ -1,0 +1,60 @@
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    height: 100%
+}
+
+.conteiner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to bottom, #f9e014 50%, #41bca8 50%);
+    gap: 20px;  
+    padding: 20px;
+}
+
+.iniciologo {
+    display: flex;
+    object-fit: contain;
+    max-width: 100%;
+    height: auto;
+    background: none;
+}
+
+.button{
+    cursor: pointer;
+    text-align: center;
+    background: none;
+    border: none;
+
+}
+.button-text{
+    font-family: "Slackey", serif;
+    color: #f9e014;
+    font-size: 8vw;
+    font-style: bold;
+    text-decoration: none;
+    -webkit-text-stroke: 0.4vw #000000;
+    margin: 0;
+    padding: 0;
+}
+
+@media (max-width: 768px) {
+    .conteiner {
+        flex-direction: column; 
+    }
+
+    .iniciologo {
+        max-width: 80%;
+    }
+
+    .button-text {
+        font-size: 10vw; 
+        -webkit-text-stroke: 0.4vw #000000; 
+    }
+}
